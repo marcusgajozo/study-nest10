@@ -16,3 +16,17 @@ GET {{baseUrl}}/concepts-manual
 
 # @name ConceptsAutomatic
 GET {{baseUrl}}/concepts-automatic
+
+
+### MessageFindAll
+
+# @name MessageFindAll
+GET {{baseUrl}}/message
+
+### MessageFindId
+
+# @name MessageFindId
+GET {{baseUrl}}/message/90992
+
+
+
