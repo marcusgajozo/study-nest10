@@ -1,0 +1,6 @@
+### AppControllerGetHello
+
+@baseUrl = http://localhost:3000
+
+# @name AppControllerGetHello
+GET {{baseUrl}}/
