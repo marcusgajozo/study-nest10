@@ -1,4 +1,14 @@
-import { Controller } from '@nestjs/common';
+import { Controller, Get } from '@nestjs/common';
+import { ConceptsAutomaticService } from './concepts-automatic.service';
 
 @Controller('concepts-automatic')
-export class ConceptsAutomaticController {}
+export class ConceptsAutomaticController {
+  constructor(
+    private readonly conceptsManualService: ConceptsAutomaticService,
+  ) {}
+
+  @Get()
+  home(): string {
+    return this.conceptsManualService.solucion();
+  }
+}
